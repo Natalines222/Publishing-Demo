@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>Flexbox styling</title>
+
+    <!-- FONT AWESOME -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Your styles should be called here -->
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+  </head>
+
+  <body>
+    <!-- YOUR CONTENT GOES HERE -->
+    <div class="container">
+      <section class="top">
+        <h1>Natalie Peart</h1>
+        <h2>Journalist. Mystic.</h2>
+      </section>
+
+      <!-- <section class="photo"> -->
+
+      <figure>
+        <img class="main_img" src="images/peart.jpg">
+        <figcaption>Natalie Peart is a media maker, astrologer and yoga teacher. <span class="credit">Credit: Natalie Peart</span></figcaption>
+      </figure>
+
+      <section class="text">
+        <p> From the time I was a child, I was always interested in the traditional arts and the esoteric arts. I have channeled that interest into practicing as a media worker, yoga teacher and astrologer. Born in Trinidad and Tobago to a
+          Trinbagonian mother and Jamaican father, I love my West Indian bloodlines. I live and work in the county of Kings.</p>
+
+      </section>
+
+      <h3 class="flex-hed">Offerings</h3> <!-- broke the subhed out of text to correct alignment based on mock -->
+
+      <section class="flex">
+        <!-- flex box refers to the box that contains the "flexed" content -->
+
+        <section class="img_holder">
+          <!-- each img_holder is flexed content -->
+          <figure class="sub_img">
+            <img class="small" src="images/filmmaker.jpg"> <!-- You should crop your images to be the same size before using them, otherwise, even with flex box, they come out uneven -->
+            <figcaption class="sub_cap">Natalie working on her docu-short KISS TEETH. <span class="credit">Credit: Matteo</span></figcaption>
+          </figure>
+          <section class="sub_text">
+            <p>I have experience producing online shows, podcasts and shooting film and editing both audio and film.
+            </p>
+          </section>
+        </section>
+
+
+        <section class="img_holder">
+          <figure class="sub_img">
+            <img class="main_img" src="images/yoga.jpg">
+            <figcaption class="sub_cap">Natalie doing the famous downward facing dog. <span class="credit">Credit: Natalie Peart</span></figcaption>
+          </figure>
+          <section class="sub_text">
+            <p>Drp into my weekly Tuesday morning class at Stacked Yoga. I also teach private classes. Online classes run for one hour and are $10. Private lessons are one hour and fifteen minutes and are $60 a session. A three-session package is
+              $160/monthly.</p>
+          </section>
+        </section>
+
+
+        <section class="img_holder">
+          <figure class="sub_img">
+            <img class="main_img" src="images/natalchart.jpeg">
+            <figcaption class="sub_cap">Natal Chart <span class="credit">Credit: Natalie Peart</span></figcaption>
+          </figure>
+          <section class="sub_text">
+            <p>Use your chart as a way to foster more love and compassion for yourself. Chart readings run one hour and are $44. We'll go over chart basics, discuss aspects and look at your profection year. Sometimes, if the spirit feels right, we'll
+              pull a taort card as a final food for thought.</p>
+          </section>
+        </section>
+
+      </section>
+      <!-- this ^ closes the flex box section -->
+
+    </div>
+
+    <!-- When you get to using javascript, you'll want to link to it at the bottom of the document, still inside the body. That's for later. -->
+    <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Your javascript should be called here -->
+
+  </body>
+
+</html>
